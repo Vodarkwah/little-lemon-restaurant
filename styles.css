@@ -256,44 +256,85 @@ text-shadow: 0 0 10px rgba(255, 252, 252, 0.8), 0 0 20px rgba(0, 255, 255, 0.6),
     align-self: center;
     margin-right: 20px;
 }
-
-
-
-
-#reservation{
-    /* display: flex; */
-    /* justify-content: space-between; */
-   
-    /* justify-content: center; */
-    height: 500px;
+#reservation {
+    height: auto;
+    min-height: 500px;
     background: url(./assets/reservation.jpeg), rgba(0, 0, 0, 0.1);
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     background-size: cover;
     color: #fff;
+    padding: 40px 0;
 }
 
-#reservation h3{
+#reservation h3 {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 40px;
+    margin-bottom: 20px;
 }
 
-.reservation-container{
+.reservation-container {
     background: rgba(0, 0, 0, 0.75);
-    width: 100%;
-    height: 100%;
-    /* display: absolute; */
+    width: 80%;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    border-radius: 10px;
 }
 
-#reservation form{
+#reservation-form {
     display: flex;
-    flex-flow: wrap;
-    justify-content: space-evenly;
-    
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
+.form-section {
+    width: 48%;
+}
+
+fieldset {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #fff;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
 
 /* MAIN SECTION END */
 
@@ -302,33 +343,61 @@ text-shadow: 0 0 10px rgba(255, 252, 252, 0.8), 0 0 20px rgba(0, 255, 255, 0.6),
 .footer-info{  /* Parent container of about, open hours and contact us*/
     display: flex;
     justify-content:center;
-    background-color: rgba(196, 195, 195, 0.9);
-    height: 400px;
+    /* background-color: rgba(0, 0, 0, 0.2); */
+    /* background: linear-gradient(to bottom left, rgba(230, 230, 30, 0.5), rgba(210, 110, 10, 0.7), rgba(167, 167, 37, 0.5), rgba(144, 140, 135, 0.7)); */
+    /* background-image: linear-gradient( 179deg,  rgba(0,0,0,1) 9.2%, rgba(127,16,16,1) 103.9% ); */
+    /* background-image: linear-gradient(40deg, #af97b2 0%, #aa6b73 100%); */
+    height: 300px;
     padding: 30px;
 }
 footer div h3{
     text-align: center;
+    font-size: 25px;
+    font-family: 'Courier New';
 }
 
 .footer-card{
     width: 350px;
+    margin: 30px;
 }
 
 .opening-hours ul{
     display: flex;
     flex-direction: column;
-    border: #aff 2px solid;
+    /* border: #aff 2px solid; */
+}
+
+.opening-hours li {
+    /* margin: 10px 0; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-about p {
+    color: black;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: justify;
+    
 }
 
 footer li span{
     display: inline-flex;
-    border: blue 1px solid;
+    /* border: blue 1px solid; */
+    margin: 3px;
 }
-
-
-form input{
-
+hr{
+    border: 2px solid black;
+    width: 30%;
+    justify-self: center;
+    margin: 10px auto;
+    
 }
+/* 
+footer li span{
+
+
+} */
 
 .copyright{
     background-color: red;
@@ -336,6 +405,8 @@ form input{
     display: flex;
     justify-content: center;
     align-items: center;
+    /* text-align: center; */
+    color: white;
 }
 /* END OF FOOTER */
 
