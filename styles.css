@@ -1,0 +1,364 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body {
+    background-color: black;
+    
+} */
+
+
+
+/*  HEADER SECTION EDIT */
+header{
+    /* background-color: #aff; */
+    /* opacity: 0.8; */
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* margin: 30px; */
+    /* align-items: center; */
+    text-align: center;
+    background-color: rgba(0, 0, 0, .9);
+    color: #fff; /* Change text color to white for better contrast */
+    /* padding: 15px; */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* z-index: 99; */
+
+}
+
+
+ul{
+list-style: none;
+display: flex;
+align-content: center;
+justify-content: center;
+margin: auto 30px;
+text-align: center;
+
+}
+.navbar{
+    position: sticky;
+    /* position: fixed; */
+    top: 0px;
+    left: 0px; 
+    width: 100%;
+    z-index: 99; /* make sure the navbar is above other content */
+    background-color: inherit; /* inherit background color from header */
+    padding: 10px;
+}
+li{
+    margin: auto 30px; 
+    
+}
+
+
+a {
+    text-decoration: none;
+    color: #fff; /* Change link color to white */
+    padding: 10px;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  a:hover {
+    background-color: #444; /* Use a darker shade on hover for better contrast */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(232, 99, 99, 0.8), 0 0 20px rgba(255, 255, 255, 0.6), 0 0 30px rgba(255, 0, 0, 0.4);
+  }
+  
+
+/* END OF HEADER SECTION */
+
+
+
+/* MAIN SECTION EDIT */
+#intro{
+    /* text-align: center; */
+    /* border: 3px solid red; */
+    margin: 0 auto;
+    background-image: url(./assets/Little-Lemon-logos/food.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    /* display: flex; */
+    /* align-items: center; */
+    
+    
+}
+.container-shadow{
+    background-color: rgba(39, 37, 37, 0.6);
+    height: 100%; /* to make this child occupy the full height of the parent #intro container*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.container-content{
+    text-align: center;
+    color: #fff; 
+    padding: 20px; 
+    display: flex;
+    flex-direction: column;
+}
+.container-content h1, .container-content h2 {
+    font-weight: normal; /* replace bold with normal for a more modern feel */
+    margin-bottom: 10px; /* add spacing between heading and text */
+    animation: heading-pop 1s ease-in-out;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+.container-content h2{
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* box-shadow: 0 0 10px rgba(232, 99, 99, 0.8), 0 0 20px rgba(255, 255, 255, 0.6), 0 0 30px rgba(255, 0, 0, 0.4); */
+    border-radius: 5px;
+    text-shadow: 0 0 20px red, 0 0 20px blue,0 0 20px black;
+    /* animation: heading-pop 4s ease-in-out infinite; */
+}
+
+  @keyframes heading-pop {
+    0% { transform: scale(0.8); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+  }
+  
+.container-content p {
+font-size: 20px;
+line-height: 1.5; /* improve text readability */
+margin: 60px auto;
+width: 70%;
+color: white;
+text-shadow: 0 0 10px rgba(255, 252, 252, 0.8), 0 0 20px rgba(0, 255, 255, 0.6), 0 0 30px rgba(255, 0, 0, 0.4);;
+/* background-color: #444; */
+}
+
+.container-content p:hover {
+    /* Increase the intensity of the glow on hover */
+    text-shadow: 0 0 20px white, 0 0 20px white,0 0 20px white;
+  }
+
+.container-content h1{
+    display: flex;
+    align-items: center;
+    margin: 40px auto;
+}
+#intro span {
+    /* highlight restaurant name with color change animation */
+    color: #f1c40f;
+    font-size: 70px;
+    animation: highlight-pulse 2s ease-in-out infinite;
+    margin: 0 30px;
+  }
+@keyframes highlight-pulse {
+    0%, 100% {color: #f1c40f;}
+    50% {color: rgb(255, 243, 131);}
+  }
+
+#intro span:hover {
+    box-shadow: 0 0 10px rgba(232, 99, 99, 0.8), 0 0 20px rgba(255, 255, 255, 0.6), 0 0 30px rgba(255, 0, 0, 0.4);
+    border-radius: 5px;
+    animation: tweezer 0.5s ease-in-out infinite;
+  }
+  
+@keyframes tweezer {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}  
+
+#dishes {
+    display: flex;
+    /* justify-content: space-between; */
+    margin: 5px auto;
+    padding: 20px;
+    justify-content: center;
+    height: 400px;
+    
+}
+
+.card{
+    border: 2px solid lemonchiffon;
+    /* padding: 15px; */
+    margin: auto 30px;
+    width: 350px;
+    height: 300px;
+    background: rgba(0, 0, 0, 0.9);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 0 10px rgba(0,0,0,0.8);
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;  
+    color: #fff;
+    display: flex;
+    flex-flow: column;
+    /* justify-content: space-between; */
+    
+}
+
+.card p{
+    /* opacity:0; */
+    /* padding: 30px 20px; */
+    /* background: rgba(255, 12, 12, 0.4) ; */
+    /* height: 50%; */
+    text-align: center;
+    padding-top: 15px;
+}
+
+.card img{
+    /* width: 100%; */
+    /* height: 200px;  */
+    border-radius: 8px;
+}
+
+
+.card:hover{ /* add this block */
+    transform: scale(1.1);
+    border-color: green;
+    
+}
+
+.card p:hover{ /* add this block */
+    transform: scale(1.1);
+    border-color: green;
+    /* display: inline; */
+    /* color: #444; */
+    transition: ease-in-out 0.3s;
+    /* background: rgba(0, 0, 0, 1); */
+    /* opacity: 1; */
+}
+
+.card div {
+    display: flex;
+    align-content: center;
+}
+
+.card button{
+    padding: 8px;
+    margin: 15px auto;
+   
+    background-color: rgba(255,255,0,0.9); 
+    border: 2px solid black;
+    font-weight: bolder;
+    border-radius: 8px;
+
+}
+
+.card button:hover{
+    background-color: yellow;
+    transform: scale(1.1);   
+
+}
+.card span{
+    align-self: center;
+    margin-right: 20px;
+}
+
+
+
+
+#reservation{
+    /* display: flex; */
+    /* justify-content: space-between; */
+   
+    /* justify-content: center; */
+    height: 500px;
+    background: url(./assets/reservation.jpeg), rgba(0, 0, 0, 0.1);
+    background-repeat:no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+#reservation h3{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+
+.reservation-container{
+    background: rgba(0, 0, 0, 0.75);
+    width: 100%;
+    height: 100%;
+    /* display: absolute; */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#reservation form{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+    
+}
+
+
+/* MAIN SECTION END */
+
+
+/* FOOTER SECTION EDIT */
+.footer-info{  /* Parent container of about, open hours and contact us*/
+    display: flex;
+    justify-content:center;
+    background-color: rgba(196, 195, 195, 0.9);
+    height: 400px;
+    padding: 30px;
+}
+footer div h3{
+    text-align: center;
+}
+
+.footer-card{
+    width: 350px;
+}
+
+.opening-hours ul{
+    display: flex;
+    flex-direction: column;
+    border: #aff 2px solid;
+}
+
+footer li span{
+    display: inline-flex;
+    border: blue 1px solid;
+}
+
+
+form input{
+
+}
+
+.copyright{
+    background-color: red;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* END OF FOOTER */
+
+
+
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 400px) {
+    li {
+        /* display: none; */
+    }
+    header{
+        justify-content: center;
+    }
+    
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;    
+        
+    }
+        
+    .card{
+        margin: 20px 0px auto;
+    }
+}

@@ -1,2 +1,1 @@
-# little-lemon-restaurant
-this project is for the In-depth HTML CSS project
+# This project is done as part of the Meta HTML and CSS Module
